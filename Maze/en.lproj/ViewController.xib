@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="exit" destination="wXM-Sn-nlk" id="rGs-bk-znj"/>
+                <outlet property="ghost1" destination="gpJ-Hy-Nhc" id="5aB-yC-tI1"/>
+                <outlet property="ghost2" destination="roG-WH-qcT" id="ayR-wH-cCY"/>
+                <outlet property="ghost3" destination="GqC-2I-l4o" id="o0g-eV-VdF"/>
+                <outlet property="pacman" destination="zVR-ib-g7i" id="wbZ-SL-Wvh"/>
+                <outlet property="view" destination="6" id="7"/>
+                <outletCollection property="wall" destination="1Qn-Ep-tIn" id="bkd-Tq-LGc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pacman.png" translatesAutoresizingMaskIntoConstraints="NO" id="zVR-ib-g7i">
+                    <rect key="frame" x="0.0" y="144" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="exit.png" translatesAutoresizingMaskIntoConstraints="NO" id="wXM-Sn-nlk">
+                    <rect key="frame" x="515" y="143" width="33" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ghost.png" translatesAutoresizingMaskIntoConstraints="NO" id="roG-WH-qcT">
+                    <rect key="frame" x="268" y="0.0" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ghost.png" translatesAutoresizingMaskIntoConstraints="NO" id="gpJ-Hy-Nhc">
+                    <rect key="frame" x="128" y="288" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ghost.png" translatesAutoresizingMaskIntoConstraints="NO" id="GqC-2I-l4o">
+                    <rect key="frame" x="361" y="288" width="32" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Qn-Ep-tIn">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="wzb-dD-syc">
+                    <rect key="frame" x="0.0" y="256" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="CgN-nE-PrL">
+                    <rect key="frame" x="504" y="0.0" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sxf-dj-b8w">
+                    <rect key="frame" x="504" y="256" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="JN9-4h-f4P">
+                    <rect key="frame" x="128" y="85" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="pL9-dx-2Tg">
+                    <rect key="frame" x="196" y="201" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="ctc-s0-3JS">
+                    <rect key="frame" x="403" y="129" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="gqX-io-vpk">
+                    <rect key="frame" x="432" y="201" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="squareWall.png" translatesAutoresizingMaskIntoConstraints="NO" id="Iw2-WI-NZK">
+                    <rect key="frame" x="66" y="28" width="64" height="64"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="exit.png" width="33" height="33"/>
+        <image name="ghost.png" width="32" height="32"/>
+        <image name="pacman.png" width="32" height="32"/>
+        <image name="squareWall.png" width="64" height="64"/>
+    </resources>
+</document>
